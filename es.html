@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang='ja'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- FontAwesome -->
+        <script src='https://kit.fontawesome.com/4a428ac66b.js' crossorigin='anonymous'></script>
+        <!-- SASS -->
+        <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+        <!-- jQuery-->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+        <!-- BootStrap -->
+        <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>-->
+
+        <link rel='stylesheet' href='./style.css'>
+
+        <title>エントリーシート</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h3>お名前</h3>
+                <input type="text" required >
+                <h3>お住所</h3>
+                <input type="text" required>
+                <h3>お電話番号</h3>
+                <input type="tel" required>
+                <h3>最終学歴</h3>
+                <label for="middle">中卒</label><input type="radio" value="中卒" name="graduation" id="middle">
+                <label for="high">高卒</label><input type="radio" value="高卒" name="graduation" id="high">
+                <label for="univ">大卒</label><input type="radio" value="大卒" name="graduation" id="univ" checked>
+                <h3>興味のある弊社サービス</h3>
+                <label for="chatapp">チャットアプリ</label><input type="checkbox" value="chatapp" name="interest" id="chatapp">
+                <label for="mailapp">メール管理</label><input type="checkbox" value="mailapp" name="interest" id="mailapp">
+                <label for="searchapp">検索エンジン</label><input type="checkbox" value="searchapp" name="interest" id="searchapp">
+                <h3>学生時代に最も力を入れたことを教えてください(150字以内)</h3>
+                <textarea name="gakuchika" maxlength="150" cols="60" rows="10" required></textarea><br>
+                <input type="submit">
+                
+
+            </form>
+        </div>
+
+        <script src='./script.js'></script>
+
+        <!-- JS, Popper.js, and jQuery -->
+        <!--<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>-->
+        <!-- <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous'></script>-->
+        <!-- <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous'></script>-->
+    </body>
+</html>
